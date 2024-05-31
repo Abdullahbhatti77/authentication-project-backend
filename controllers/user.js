@@ -72,7 +72,7 @@ export const forgotPassword = async (req, res) => {
       from: "abdullah.dev160@gmail.com",
       to: email,
       subject: "Password Reset",
-      text: `http://localhost:5173/reset-password/${token}`,
+      text: `https://ab-authentication.vercel.app/reset-password/${token}`,
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
